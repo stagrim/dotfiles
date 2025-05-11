@@ -1,0 +1,25 @@
+[
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-d": "editor::DuplicateLineDown",
+      "ctrl-shift-up": "editor::MoveLineUp",
+      "ctrl-shift-down": "editor::MoveLineDown",
+      "ctrl-;": "terminal_panel::ToggleFocus",
+      "ctrl-y": "editor::DeleteLine",
+      "ctrl-Enter": "editor::NewlineBelow"
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-;": "workspace::ToggleBottomDock"
+    }
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "ctrl-backspace": ["terminal::SendKeystroke", "alt-backspace"]
+    }
+  }
+]
