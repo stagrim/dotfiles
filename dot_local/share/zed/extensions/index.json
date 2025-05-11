@@ -1,0 +1,1056 @@
+{
+  "extensions": {
+    "docker-compose": {
+      "manifest": {
+        "id": "docker-compose",
+        "name": "Docker Compose",
+        "version": "0.1.0",
+        "schema_version": 1,
+        "description": "Syntax highlighting for Docker Compose files",
+        "repository": "https://github.com/eth0net/zed-docker-compose",
+        "authors": [
+          "eth0net <eth0net@pm.me>"
+        ],
+        "lib": {
+          "kind": "Rust",
+          "version": "0.0.6"
+        },
+        "themes": [],
+        "icon_themes": [],
+        "languages": [],
+        "grammars": {},
+        "language_servers": {
+          "docker-compose": {
+            "language": "YAML",
+            "languages": [],
+            "language_ids": {},
+            "code_action_kinds": null
+          }
+        },
+        "context_servers": {},
+        "slash_commands": {},
+        "indexed_docs_providers": {},
+        "snippets": null,
+        "capabilities": []
+      },
+      "dev": false
+    },
+    "dockerfile": {
+      "manifest": {
+        "id": "dockerfile",
+        "name": "Dockerfile",
+        "version": "0.0.5",
+        "schema_version": 1,
+        "description": "Dockerfile support.",
+        "repository": "https://github.com/zed-extensions/dockerfile",
+        "authors": [
+          "d1y <chenhonzho@gmail.com>",
+          "joshmeads <github@joshmeads.com>"
+        ],
+        "lib": {
+          "kind": "Rust",
+          "version": "0.0.4"
+        },
+        "themes": [],
+        "icon_themes": [],
+        "languages": [
+          "languages/dockerfile"
+        ],
+        "grammars": {
+          "dockerfile": {
+            "repository": "https://github.com/camdencheek/tree-sitter-dockerfile",
+            "rev": "868e44ce378deb68aac902a9db68ff82d2299dd0",
+            "path": null
+          }
+        },
+        "language_servers": {
+          "dockerfile-language-server": {
+            "language": "Dockerfile",
+            "languages": [],
+            "language_ids": {},
+            "code_action_kinds": null
+          }
+        },
+        "context_servers": {},
+        "slash_commands": {},
+        "indexed_docs_providers": {},
+        "snippets": null,
+        "capabilities": []
+      },
+      "dev": false
+    },
+    "dracula": {
+      "manifest": {
+        "id": "dracula",
+        "name": "Dracula",
+        "version": "0.9.3",
+        "schema_version": 1,
+        "description": "Official Dracula theme for Zed",
+        "repository": "https://github.com/dracula/zed",
+        "authors": [
+          "Ben Hamment <fisix1@gmail.com>"
+        ],
+        "lib": {
+          "kind": null,
+          "version": null
+        },
+        "themes": [
+          "themes/dracula.json"
+        ],
+        "icon_themes": [],
+        "languages": [],
+        "grammars": {},
+        "language_servers": {},
+        "context_servers": {},
+        "slash_commands": {},
+        "indexed_docs_providers": {},
+        "snippets": null,
+        "capabilities": []
+      },
+      "dev": false
+    },
+    "git-firefly": {
+      "manifest": {
+        "id": "git-firefly",
+        "name": "Git Firefly",
+        "version": "0.0.3",
+        "schema_version": 1,
+        "description": "Provides Git Syntax Highlighting",
+        "repository": "https://github.com/d1y/git_firefly",
+        "authors": [
+          "d1y <chenhonzho@gmail.com>"
+        ],
+        "lib": {
+          "kind": null,
+          "version": null
+        },
+        "themes": [],
+        "icon_themes": [],
+        "languages": [
+          "languages/gitconfig",
+          "languages/diff",
+          "languages/gitcommit",
+          "languages/gitignore",
+          "languages/gitrebase",
+          "languages/gitattributes"
+        ],
+        "grammars": {
+          "diff": {
+            "repository": "https://github.com/the-mikedavis/tree-sitter-diff",
+            "rev": "c165725c28e69b36c5799ff0e458713a844f1aaf",
+            "path": null
+          },
+          "git_commit": {
+            "repository": "https://github.com/the-mikedavis/tree-sitter-git-commit",
+            "rev": "6f193a66e9aa872760823dff020960c6cedc37b3",
+            "path": null
+          },
+          "git_config": {
+            "repository": "https://github.com/the-mikedavis/tree-sitter-git-config",
+            "rev": "9c2a1b7894e6d9eedfe99805b829b4ecd871375e",
+            "path": null
+          },
+          "git_rebase": {
+            "repository": "https://github.com/the-mikedavis/tree-sitter-git-rebase",
+            "rev": "d8a4207ebbc47bd78bacdf48f883db58283f9fd8",
+            "path": null
+          },
+          "gitattributes": {
+            "repository": "https://github.com/tree-sitter-grammars/tree-sitter-gitattributes",
+            "rev": "41940e199ba5763abea1d21b4f717014b45f01ea",
+            "path": null
+          },
+          "gitignore": {
+            "repository": "https://github.com/shunsambongi/tree-sitter-gitignore",
+            "rev": "f4685bf11ac466dd278449bcfe5fd014e94aa504",
+            "path": null
+          }
+        },
+        "language_servers": {},
+        "context_servers": {},
+        "slash_commands": {},
+        "indexed_docs_providers": {},
+        "snippets": null,
+        "capabilities": []
+      },
+      "dev": false
+    },
+    "golangci-lint": {
+      "manifest": {
+        "id": "golangci-lint",
+        "name": "golangci-lint",
+        "version": "0.2.0",
+        "schema_version": 1,
+        "description": "golangci-lint support.",
+        "repository": "https://github.com/zed-extensions/golangci-lint",
+        "authors": [
+          "Jordan Gregory <jordan@j4ng5y.dev>",
+          "Joakim Engeset <joakim.engeset@gmail.com>"
+        ],
+        "lib": {
+          "kind": "Rust",
+          "version": "0.2.0"
+        },
+        "themes": [],
+        "icon_themes": [],
+        "languages": [],
+        "grammars": {},
+        "language_servers": {
+          "golangci-lint": {
+            "language": null,
+            "languages": [
+              "Go"
+            ],
+            "language_ids": {},
+            "code_action_kinds": null
+          }
+        },
+        "context_servers": {},
+        "slash_commands": {},
+        "indexed_docs_providers": {},
+        "snippets": null,
+        "capabilities": []
+      },
+      "dev": false
+    },
+    "html": {
+      "manifest": {
+        "id": "html",
+        "name": "HTML",
+        "version": "0.2.1",
+        "schema_version": 1,
+        "description": "HTML support.",
+        "repository": "https://github.com/zed-industries/zed",
+        "authors": [
+          "Isaac Clayton <slightknack@gmail.com>"
+        ],
+        "lib": {
+          "kind": "Rust",
+          "version": "0.1.0"
+        },
+        "themes": [],
+        "icon_themes": [],
+        "languages": [
+          "languages/html"
+        ],
+        "grammars": {
+          "html": {
+            "repository": "https://github.com/tree-sitter/tree-sitter-html",
+            "rev": "bfa075d83c6b97cd48440b3829ab8d24a2319809",
+            "path": null
+          }
+        },
+        "language_servers": {
+          "vscode-html-language-server": {
+            "language": "HTML",
+            "languages": [],
+            "language_ids": {
+              "HTML": "html",
+              "CSS": "css"
+            },
+            "code_action_kinds": null
+          }
+        },
+        "context_servers": {},
+        "slash_commands": {},
+        "indexed_docs_providers": {},
+        "snippets": null,
+        "capabilities": []
+      },
+      "dev": false
+    },
+    "kdl": {
+      "manifest": {
+        "id": "kdl",
+        "name": "kdl",
+        "version": "0.0.1",
+        "schema_version": 1,
+        "description": "Syntax highlighting for KDL files.",
+        "repository": "https://github.com/elkowar/zed-kdl",
+        "authors": [
+          "ElKowar <dev@elkowar.dev>"
+        ],
+        "lib": {
+          "kind": null,
+          "version": null
+        },
+        "themes": [],
+        "icon_themes": [],
+        "languages": [
+          "languages/kdl"
+        ],
+        "grammars": {
+          "kdl": {
+            "repository": "https://github.com/tree-sitter-grammars/tree-sitter-kdl",
+            "rev": "b37e3d58e5c5cf8d739b315d6114e02d42e66664",
+            "path": null
+          }
+        },
+        "language_servers": {},
+        "context_servers": {},
+        "slash_commands": {},
+        "indexed_docs_providers": {},
+        "snippets": null,
+        "capabilities": []
+      },
+      "dev": false
+    },
+    "lua": {
+      "manifest": {
+        "id": "lua",
+        "name": "Lua",
+        "version": "0.1.2",
+        "schema_version": 1,
+        "description": "Lua support.",
+        "repository": "https://github.com/zed-extensions/lua",
+        "authors": [
+          "Max Brunsfeld <max@zed.dev>"
+        ],
+        "lib": {
+          "kind": "Rust",
+          "version": "0.1.0"
+        },
+        "themes": [],
+        "icon_themes": [],
+        "languages": [
+          "languages/lua"
+        ],
+        "grammars": {
+          "lua": {
+            "repository": "https://github.com/tree-sitter-grammars/tree-sitter-lua",
+            "rev": "a24dab177e58c9c6832f96b9a73102a0cfbced4a",
+            "path": null
+          }
+        },
+        "language_servers": {
+          "lua-language-server": {
+            "language": "Lua",
+            "languages": [],
+            "language_ids": {},
+            "code_action_kinds": null
+          }
+        },
+        "context_servers": {},
+        "slash_commands": {},
+        "indexed_docs_providers": {},
+        "snippets": null,
+        "capabilities": []
+      },
+      "dev": false
+    },
+    "make": {
+      "manifest": {
+        "id": "make",
+        "name": "Make",
+        "version": "1.1.0",
+        "schema_version": 1,
+        "description": "Makefile syntax highlighting",
+        "repository": "https://github.com/caius/zed-make",
+        "authors": [
+          "Caius Durling <dev@caius.name>",
+          "d1y <chenhonzhou@gmail.com>",
+          "Marshall Bowers <elliott.codes@gmail.com>",
+          "Luke Naylor <luke@grahamnaylor.net>"
+        ],
+        "lib": {
+          "kind": null,
+          "version": null
+        },
+        "themes": [],
+        "icon_themes": [],
+        "languages": [
+          "languages/make"
+        ],
+        "grammars": {
+          "make": {
+            "repository": "https://github.com/tree-sitter-grammars/tree-sitter-make",
+            "rev": "5e9e8f8ff3387b0edcaa90f46ddf3629f4cfeb1d",
+            "path": null
+          }
+        },
+        "language_servers": {},
+        "context_servers": {},
+        "slash_commands": {},
+        "indexed_docs_providers": {},
+        "snippets": null,
+        "capabilities": []
+      },
+      "dev": false
+    },
+    "nix": {
+      "manifest": {
+        "id": "nix",
+        "name": "Nix",
+        "version": "0.1.1",
+        "schema_version": 1,
+        "description": "Nix support.",
+        "repository": "https://github.com/zed-extensions/nix",
+        "authors": [
+          "Hasit Mistry <hasitnm@gmail.com>"
+        ],
+        "lib": {
+          "kind": "Rust",
+          "version": "0.1.0"
+        },
+        "themes": [],
+        "icon_themes": [],
+        "languages": [
+          "languages/nix"
+        ],
+        "grammars": {
+          "nix": {
+            "repository": "https://github.com/nix-community/tree-sitter-nix",
+            "rev": "b3cda619248e7dd0f216088bd152f59ce0bbe488",
+            "path": null
+          }
+        },
+        "language_servers": {
+          "nil": {
+            "language": "Nix",
+            "languages": [],
+            "language_ids": {},
+            "code_action_kinds": null
+          },
+          "nixd": {
+            "language": "Nix",
+            "languages": [],
+            "language_ids": {},
+            "code_action_kinds": null
+          }
+        },
+        "context_servers": {},
+        "slash_commands": {},
+        "indexed_docs_providers": {},
+        "snippets": null,
+        "capabilities": []
+      },
+      "dev": false
+    },
+    "nu": {
+      "manifest": {
+        "id": "nu",
+        "name": "Nu",
+        "version": "0.0.6",
+        "schema_version": 1,
+        "description": "Nushell language support for Zed",
+        "repository": "https://github.com/zed-extensions/nu",
+        "authors": [
+          "Mikayla Maki <mikayla@zed.dev>",
+          "Joseph Lyons <joseph@zed.dev>",
+          "Darren Schroeder"
+        ],
+        "lib": {
+          "kind": "Rust",
+          "version": "0.2.0"
+        },
+        "themes": [],
+        "icon_themes": [],
+        "languages": [
+          "languages/nu"
+        ],
+        "grammars": {
+          "nu": {
+            "repository": "https://github.com/nushell/tree-sitter-nu",
+            "rev": "b99dc3b7b26337d84f95c0de4dda81077b03e5c7",
+            "path": null
+          }
+        },
+        "language_servers": {
+          "nu": {
+            "language": null,
+            "languages": [
+              "Nu"
+            ],
+            "language_ids": {},
+            "code_action_kinds": null
+          }
+        },
+        "context_servers": {},
+        "slash_commands": {},
+        "indexed_docs_providers": {},
+        "snippets": null,
+        "capabilities": []
+      },
+      "dev": false
+    },
+    "scss": {
+      "manifest": {
+        "id": "scss",
+        "name": "SCSS",
+        "version": "0.1.0",
+        "schema_version": 1,
+        "description": "SCSS support",
+        "repository": "https://github.com/bajrangCoder/zed-scss",
+        "authors": [
+          "Raunak Raj <bajrangcoders@gmail.com>"
+        ],
+        "lib": {
+          "kind": "Rust",
+          "version": "0.0.6"
+        },
+        "themes": [],
+        "icon_themes": [],
+        "languages": [
+          "languages/scss"
+        ],
+        "grammars": {
+          "scss": {
+            "repository": "https://github.com/savetheclocktower/tree-sitter-scss",
+            "rev": "090d25a5fc829ce6956201cf55ab6b6eacad999c",
+            "path": null
+          }
+        },
+        "language_servers": {
+          "scss-lsp": {
+            "language": "SCSS",
+            "languages": [],
+            "language_ids": {},
+            "code_action_kinds": null
+          },
+          "some-sass-lsp": {
+            "language": "SCSS",
+            "languages": [],
+            "language_ids": {},
+            "code_action_kinds": null
+          }
+        },
+        "context_servers": {},
+        "slash_commands": {},
+        "indexed_docs_providers": {},
+        "snippets": null,
+        "capabilities": []
+      },
+      "dev": false
+    },
+    "svelte": {
+      "manifest": {
+        "id": "svelte",
+        "name": "Svelte",
+        "version": "0.2.7",
+        "schema_version": 1,
+        "description": "Svelte support",
+        "repository": "https://github.com/zed-extensions/svelte",
+        "authors": [
+          "Zed Industries <support@zed.dev>"
+        ],
+        "lib": {
+          "kind": "Rust",
+          "version": "0.1.0"
+        },
+        "themes": [],
+        "icon_themes": [],
+        "languages": [
+          "languages/svelte"
+        ],
+        "grammars": {
+          "svelte": {
+            "repository": "https://github.com/tree-sitter-grammars/tree-sitter-svelte",
+            "rev": "3f06f705410683adb17d146b5eca28c62fe81ba6",
+            "path": null
+          }
+        },
+        "language_servers": {
+          "svelte-language-server": {
+            "language": "Svelte",
+            "languages": [],
+            "language_ids": {},
+            "code_action_kinds": null
+          }
+        },
+        "context_servers": {},
+        "slash_commands": {},
+        "indexed_docs_providers": {},
+        "snippets": null,
+        "capabilities": []
+      },
+      "dev": false
+    },
+    "templ": {
+      "manifest": {
+        "id": "templ",
+        "name": "Templ",
+        "version": "0.0.7",
+        "schema_version": 1,
+        "description": "Templ language support for Zed",
+        "repository": "https://github.com/makifdb/zed-templ",
+        "authors": [
+          "Mehmet Akif Duba <mail@makifdb.com>"
+        ],
+        "lib": {
+          "kind": "Rust",
+          "version": "0.0.6"
+        },
+        "themes": [],
+        "icon_themes": [],
+        "languages": [
+          "languages/templ"
+        ],
+        "grammars": {
+          "templ": {
+            "repository": "https://github.com/vrischmann/tree-sitter-templ",
+            "rev": "9269b5a65e79be8fb6b6669935823263343b7ba0",
+            "path": null
+          }
+        },
+        "language_servers": {
+          "templ": {
+            "language": "Templ",
+            "languages": [],
+            "language_ids": {
+              "Templ": "templ"
+            },
+            "code_action_kinds": null
+          }
+        },
+        "context_servers": {},
+        "slash_commands": {},
+        "indexed_docs_providers": {},
+        "snippets": null,
+        "capabilities": []
+      },
+      "dev": false
+    },
+    "tokyo-night": {
+      "manifest": {
+        "id": "tokyo-night",
+        "name": "Tokyo Night Themes",
+        "version": "0.5.0",
+        "schema_version": 1,
+        "description": "Tokyo Night Themes",
+        "repository": "https://github.com/ssaunderss/zed-tokyo-night",
+        "authors": [
+          "ssaunderss <austinsaunders@me.com>"
+        ],
+        "lib": {
+          "kind": null,
+          "version": null
+        },
+        "themes": [
+          "themes/tokyo-night.json"
+        ],
+        "icon_themes": [],
+        "languages": [],
+        "grammars": {},
+        "language_servers": {},
+        "context_servers": {},
+        "slash_commands": {},
+        "indexed_docs_providers": {},
+        "snippets": null,
+        "capabilities": []
+      },
+      "dev": false
+    },
+    "toml": {
+      "manifest": {
+        "id": "toml",
+        "name": "TOML",
+        "version": "0.1.3",
+        "schema_version": 1,
+        "description": "TOML support.",
+        "repository": "https://github.com/zed-industries/zed",
+        "authors": [
+          "Max Brunsfeld <max@zed.dev>",
+          "Ammar Arif <evergreenkary@gmail.com>"
+        ],
+        "lib": {
+          "kind": "Rust",
+          "version": "0.1.0"
+        },
+        "themes": [],
+        "icon_themes": [],
+        "languages": [
+          "languages/toml"
+        ],
+        "grammars": {
+          "toml": {
+            "repository": "https://github.com/tree-sitter/tree-sitter-toml",
+            "rev": "342d9be207c2dba869b9967124c679b5e6fd0ebe",
+            "path": null
+          }
+        },
+        "language_servers": {
+          "taplo": {
+            "language": "TOML",
+            "languages": [],
+            "language_ids": {},
+            "code_action_kinds": null
+          }
+        },
+        "context_servers": {},
+        "slash_commands": {},
+        "indexed_docs_providers": {},
+        "snippets": null,
+        "capabilities": []
+      },
+      "dev": false
+    },
+    "verilog": {
+      "manifest": {
+        "id": "verilog",
+        "name": "Verilog",
+        "version": "0.0.8",
+        "schema_version": 1,
+        "description": "Verilog and SystemVerilog support",
+        "repository": "https://github.com/someone13574/zed-verilog-extension",
+        "authors": [
+          "Owen Law <owenlaw222@gmail.com>"
+        ],
+        "lib": {
+          "kind": "Rust",
+          "version": "0.1.0"
+        },
+        "themes": [],
+        "icon_themes": [],
+        "languages": [
+          "languages/verilog"
+        ],
+        "grammars": {
+          "verilog": {
+            "repository": "https://github.com/gmlarumbe/tree-sitter-systemverilog",
+            "rev": "ba3c1e305caf948f718293c86c6018a82ed5043e",
+            "path": null
+          }
+        },
+        "language_servers": {
+          "verible": {
+            "language": null,
+            "languages": [
+              "Verilog",
+              "SystemVerilog"
+            ],
+            "language_ids": {},
+            "code_action_kinds": null
+          },
+          "veridian": {
+            "language": null,
+            "languages": [
+              "Verilog",
+              "SystemVerilog"
+            ],
+            "language_ids": {},
+            "code_action_kinds": null
+          }
+        },
+        "context_servers": {},
+        "slash_commands": {},
+        "indexed_docs_providers": {},
+        "snippets": null,
+        "capabilities": []
+      },
+      "dev": false
+    },
+    "zig": {
+      "manifest": {
+        "id": "zig",
+        "name": "Zig",
+        "version": "0.3.4",
+        "schema_version": 1,
+        "description": "Zig support.",
+        "repository": "https://github.com/zed-extensions/zig",
+        "authors": [
+          "Allan Calix <contact@acx.dev>"
+        ],
+        "lib": {
+          "kind": "Rust",
+          "version": "0.1.0"
+        },
+        "themes": [],
+        "icon_themes": [],
+        "languages": [
+          "languages/zig"
+        ],
+        "grammars": {
+          "zig": {
+            "repository": "https://github.com/tree-sitter-grammars/tree-sitter-zig",
+            "rev": "eb7d58c2dc4fbeea4745019dee8df013034ae66b",
+            "path": null
+          }
+        },
+        "language_servers": {
+          "zls": {
+            "language": "Zig",
+            "languages": [],
+            "language_ids": {},
+            "code_action_kinds": null
+          }
+        },
+        "context_servers": {},
+        "slash_commands": {},
+        "indexed_docs_providers": {},
+        "snippets": null,
+        "capabilities": []
+      },
+      "dev": false
+    }
+  },
+  "themes": {
+    "Dracula": {
+      "extension": "dracula",
+      "path": "themes/dracula.json"
+    },
+    "Tokyo Night": {
+      "extension": "tokyo-night",
+      "path": "themes/tokyo-night.json"
+    },
+    "Tokyo Night Light": {
+      "extension": "tokyo-night",
+      "path": "themes/tokyo-night.json"
+    },
+    "Tokyo Night Storm": {
+      "extension": "tokyo-night",
+      "path": "themes/tokyo-night.json"
+    }
+  },
+  "icon_themes": {},
+  "languages": {
+    "Diff": {
+      "extension": "git-firefly",
+      "path": "languages/diff",
+      "matcher": {
+        "path_suffixes": [
+          "diff"
+        ],
+        "first_line_pattern": null
+      },
+      "hidden": false,
+      "grammar": "diff"
+    },
+    "Dockerfile": {
+      "extension": "dockerfile",
+      "path": "languages/dockerfile",
+      "matcher": {
+        "path_suffixes": [
+          "Dockerfile",
+          "Containerfile",
+          "dockerfile"
+        ],
+        "first_line_pattern": null
+      },
+      "hidden": false,
+      "grammar": "dockerfile"
+    },
+    "Git Attributes": {
+      "extension": "git-firefly",
+      "path": "languages/gitattributes",
+      "matcher": {
+        "path_suffixes": [
+          ".gitattributes"
+        ],
+        "first_line_pattern": null
+      },
+      "hidden": false,
+      "grammar": "gitattributes"
+    },
+    "Git Commit": {
+      "extension": "git-firefly",
+      "path": "languages/gitcommit",
+      "matcher": {
+        "path_suffixes": [
+          "TAG_EDITMSG",
+          "MERGE_MSG",
+          "COMMIT_EDITMSG",
+          "NOTES_EDITMSG",
+          "EDIT_DESCRIPTION"
+        ],
+        "first_line_pattern": null
+      },
+      "hidden": false,
+      "grammar": "git_commit"
+    },
+    "Git Config": {
+      "extension": "git-firefly",
+      "path": "languages/gitconfig",
+      "matcher": {
+        "path_suffixes": [
+          ".gitconfig",
+          ".gitmodules"
+        ],
+        "first_line_pattern": null
+      },
+      "hidden": false,
+      "grammar": "git_config"
+    },
+    "Git Ignore": {
+      "extension": "git-firefly",
+      "path": "languages/gitignore",
+      "matcher": {
+        "path_suffixes": [
+          ".gitignore",
+          ".dockerignore"
+        ],
+        "first_line_pattern": null
+      },
+      "hidden": false,
+      "grammar": "gitignore"
+    },
+    "Git Rebase": {
+      "extension": "git-firefly",
+      "path": "languages/gitrebase",
+      "matcher": {
+        "path_suffixes": [
+          "git-rebase-todo"
+        ],
+        "first_line_pattern": null
+      },
+      "hidden": false,
+      "grammar": "git_rebase"
+    },
+    "HTML": {
+      "extension": "html",
+      "path": "languages/html",
+      "matcher": {
+        "path_suffixes": [
+          "html",
+          "htm",
+          "shtml"
+        ],
+        "first_line_pattern": null
+      },
+      "hidden": false,
+      "grammar": "html"
+    },
+    "Kdl": {
+      "extension": "kdl",
+      "path": "languages/kdl",
+      "matcher": {
+        "path_suffixes": [
+          "kdl"
+        ],
+        "first_line_pattern": null
+      },
+      "hidden": false,
+      "grammar": "kdl"
+    },
+    "Lua": {
+      "extension": "lua",
+      "path": "languages/lua",
+      "matcher": {
+        "path_suffixes": [
+          "lua"
+        ],
+        "first_line_pattern": null
+      },
+      "hidden": false,
+      "grammar": "lua"
+    },
+    "Make": {
+      "extension": "make",
+      "path": "languages/make",
+      "matcher": {
+        "path_suffixes": [
+          "makefile",
+          "Makefile",
+          "GNUmakefile",
+          "OCamlMakefile",
+          "mk",
+          "mak"
+        ],
+        "first_line_pattern": null
+      },
+      "hidden": false,
+      "grammar": "make"
+    },
+    "Nix": {
+      "extension": "nix",
+      "path": "languages/nix",
+      "matcher": {
+        "path_suffixes": [
+          "nix"
+        ],
+        "first_line_pattern": null
+      },
+      "hidden": false,
+      "grammar": "nix"
+    },
+    "Nu": {
+      "extension": "nu",
+      "path": "languages/nu",
+      "matcher": {
+        "path_suffixes": [
+          "nu"
+        ],
+        "first_line_pattern": "^#!.*\\b(?:nu)\\b"
+      },
+      "hidden": false,
+      "grammar": "nu"
+    },
+    "SCSS": {
+      "extension": "scss",
+      "path": "languages/scss",
+      "matcher": {
+        "path_suffixes": [
+          "scss"
+        ],
+        "first_line_pattern": null
+      },
+      "hidden": false,
+      "grammar": "scss"
+    },
+    "Svelte": {
+      "extension": "svelte",
+      "path": "languages/svelte",
+      "matcher": {
+        "path_suffixes": [
+          "svelte"
+        ],
+        "first_line_pattern": null
+      },
+      "hidden": false,
+      "grammar": "svelte"
+    },
+    "TOML": {
+      "extension": "toml",
+      "path": "languages/toml",
+      "matcher": {
+        "path_suffixes": [
+          "Cargo.lock",
+          "toml",
+          "Pipfile",
+          "uv.lock"
+        ],
+        "first_line_pattern": null
+      },
+      "hidden": false,
+      "grammar": "toml"
+    },
+    "Templ": {
+      "extension": "templ",
+      "path": "languages/templ",
+      "matcher": {
+        "path_suffixes": [
+          "templ"
+        ],
+        "first_line_pattern": null
+      },
+      "hidden": false,
+      "grammar": "templ"
+    },
+    "Verilog": {
+      "extension": "verilog",
+      "path": "languages/verilog",
+      "matcher": {
+        "path_suffixes": [
+          "v",
+          "sv",
+          "svh"
+        ],
+        "first_line_pattern": null
+      },
+      "hidden": false,
+      "grammar": "verilog"
+    },
+    "Zig": {
+      "extension": "zig",
+      "path": "languages/zig",
+      "matcher": {
+        "path_suffixes": [
+          "zig",
+          "zon"
+        ],
+        "first_line_pattern": null
+      },
+      "hidden": false,
+      "grammar": "zig"
+    }
+  }
+}
