@@ -161,7 +161,7 @@ let carapace_completer = {|spans: list<string>|
 let external_completer = {|spans|
     let expanded_alias = scope aliases
     | where name == $spans.0
-    | get -i 0.expansion
+    | get -o 0.expansion
 
     let spans = if $expanded_alias != null {
         $spans
@@ -174,13 +174,14 @@ let external_completer = {|spans|
     match $spans.0 {
         # carapace completions are incorrect for nu
         nu => $fish_completer
+	deno => $fish_completer
         # fish completes commits and branch names in a nicer way
-        git => $fish_completer
+        # git => $fish_completer
         # carapace doesn't have completions for asdf
         asdf => $fish_completer
         # use zoxide completions for zoxide commands
         #__zoxide_z | __zoxide_zi => $zoxide_completer
-        _ => $fish_completer
+        _ => $carapace_completer
     } | do $in $spans
 }
 
@@ -937,4 +938,5 @@ $env.config = {
 }
 
 alias vim = nvim
-alias go-live = templ generate --watch --proxy="http://localhost:8080" --cmd="go run ."
+alias go-live = templ generate --watch --proxy="http://localhost:8080" --cmd="deno run build && go run ."
+alias userctl = systemctl --user
